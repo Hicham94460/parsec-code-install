@@ -49,7 +49,7 @@ $ScriptWebArchive = "https://github.com/Hicham94460/parsec-code-install/archive/
 $LocalArchivePath = "$ENV:UserProfile\Downloads\Parsec-Cloud-Preparation-Tool"  
 (New-Object System.Net.WebClient).DownloadFile($ScriptWebArchive, "$LocalArchivePath.zip")  
 Expand-Archive "$LocalArchivePath.zip" -DestinationPath $LocalArchivePath -Force  
-CD $LocalArchivePath\Parsec-Cloud-Preparation-Tool-master\ | powershell.exe .\Loader.ps1  
+CD $LocalArchivePath\parsec-code-install-main\ | powershell.exe .\Loader.ps1  
 ```
 
 This tool supports:
@@ -127,7 +127,7 @@ $ScriptWebArchive = "https://github.com/Hicham94460/parsec-code-install/archive/
 $LocalArchivePath = "$ENV:UserProfile\Downloads\Parsec-Cloud-Preparation-Tool"  
 (New-Object System.Net.WebClient).DownloadFile($ScriptWebArchive, "$LocalArchivePath.zip")  
 Expand-Archive "$LocalArchivePath.zip" -DestinationPath $LocalArchivePath -Force  
-CD $LocalArchivePath\Parsec-Cloud-Preparation-Tool-master\PostInstall
+CD $LocalArchivePath\parsec-code-install-main\PostInstall
 powershell.exe .\PostInstall.ps1 -DontPromptPasswordUpdateGPU
 ```
 
